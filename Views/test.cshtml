@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+    <script type="text/javascript">
+function ccheck()
+{
+uid=document.f1.uid.value;
+cpass=document.f1.cpass.value;
+
+if(uid=="" || uid==null)
+{
+alert("Plz. Enter Your User ID");
+document.f1.uid.focus();
+return false;
+}
+if(cpass=="" || cpass==null)
+{
+alert("Plz. Enter Your Password");
+document.f1.cpass.focus();
+return false;
+}
+return true;
+}
+    </script>
+    <title>Login Page in Jsp</title>
+</head>
+<body onload="document.f1.uid.focus()">
+    <h2>LOGIN PAGE IN JSP</h2>
+    <form id="f1" name="f1" action="doLogin.jsp" method="post" onsubmit="return ccheck()">
+        <table>
+            <tr>
+                <td><b>User ID</b></td>
+                <td><input name="uid" type="text" /></td>
+            </tr>
+            <tr>
+                <td><b>Password</b></td>
+                <td><input name="cpass" type="password" /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" /> </td>
+                <td><input type="reset" value="Reset" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

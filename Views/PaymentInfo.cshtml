@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.Payments.AlRajhi.Models.PaymentInfoModel
+
+<div class="title">
+    <strong>@T("Payment.SelectCreditCard")</strong>
+</div>
+<table width="100%" cellspacing="2" cellpadding="1" border="0">
+    <tr>
+        <td>
+            @*KNET <input asp-for="CreditCardType" type="radio" name="CreditCardType" value="Knet" />
+            Credit Card <input asp-for="CreditCardType" type="radio" name="CreditCardType" value="cc" />*@
+
+            <select asp-for="CreditCardType" asp-items="Model.CreditCardTypes" class="dropdownlists"></select>
+        </td>
+    </tr>
+</table>

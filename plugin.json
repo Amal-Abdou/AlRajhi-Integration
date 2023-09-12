@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Al Rajhi Bank",
+  "SystemName": "Croxees.Payments.AlRajhiBank",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Croxees Studios",
+  "DisplayOrder": 1,
+  "FileName": "Croxees.Nop.Plugins.Payments.AlRajhiBank.dll",
+  "Description": "This plugin allows you to pay using Visa and Credit Card through AlRajhi Bank Payment Gateway."
+}
